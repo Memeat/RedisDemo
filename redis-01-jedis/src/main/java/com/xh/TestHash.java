@@ -10,6 +10,7 @@ public class TestHash {
         //连接redis//
         //连接redis//
         //master
+        //hot-fix test
         Jedis jedis = new Jedis("192.168.200.130",6379);
 
         jedis.select(4);
