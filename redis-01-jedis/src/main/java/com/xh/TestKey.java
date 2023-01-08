@@ -6,11 +6,12 @@ import java.util.Set;
 
 public class TestKey {
     public static void main(String[] args) {
-        //连接redis
+        //连接redis//
         Jedis jedis = new Jedis("192.168.200.130",6379);
 
         System.out.println("删除所有数据库中的数据：" + jedis.flushAll());
         System.out.println("选择第几号库：" + jedis.select(0));
+        System.out.println("清空当前库数据" + jedis.flushDB());
         System.out.println("清空当前库数据" + jedis.flushDB());
 
         System.out.println("判断某个键是否存在：" + jedis.exists("username"));
