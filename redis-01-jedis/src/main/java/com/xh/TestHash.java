@@ -8,6 +8,7 @@ import java.util.Map;
 public class TestHash {
     public static void main(String[] args) {
         //连接redis
+        //github 更新
         Jedis jedis = new Jedis("192.168.200.130",6379);
 
         jedis.select(4);
